@@ -16,7 +16,7 @@ describe('post', () => {
 
         before(done => {
             rabbit
-                .delete("/api/queues/%2F/tasksdev/contents")
+                .delete("/api/queues/%2f/tasksdev/contents")
                 .auth('guest', 'guest')
                 .end((err, res) => {
                     expect(res).to.has.status(204);
